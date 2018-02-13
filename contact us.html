@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dr.Schmit--HOME</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+	<header>
+        <section class="logo">
+        <div class="logo-pic"><img src="images/logo.png"></div>
+        <p class="logo-text">Dr.Schmidt<br>
+
+        </section>
+		<div class="menu">
+			<ul>
+				<li><a href="drschidthome.html" class="active cleafix">HOME</a></li>
+				<li><a href="" class="clearfix">SERVICES</a></li>
+				<li><a href="" class="clearfix">CONTACT</a></li>
+			</ul>
+
+		</div>
+
+	</header>
+    <main class="contact-main">
+        <form class="content-section">
+        <fieldset>
+            <h1>Contact us</h1>
+            <p>Please, fill out the information in the text-boxes below</p>
+            <div class="name">
+            <label for="first-name">First Name</label>
+            <label for="last-name">Last Name</label>
+            </div>
+            <div class="name">
+            <input class="cont" type="text" id="first-name">
+            <input class="cont" type="text" id="last-name">
+            </div>
+            <div class="name">
+            <label for="bday">Birthday</label>
+            <label for="gender">Gender</label>
+            </div>
+            <div class="name">
+
+            <input class="cont" type="date" name="bday">
+
+
+
+            <select class="cont gender" name="gender">
+                <option value=""> </option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+            </div>
+            <div class="name">
+            <label for="tel">Mobile</label>
+            <label for="email">Your email</label>
+            </div>
+            <div class="name">
+            <input class="cont" type="tel" pattern="[0-9]{10}"/>
+
+            <input class="cont" type="text" placeholder="Enter your email...."/>
+            </div>
+            <div class="name">
+
+            <label class="msg" for="how-help">How can we help?</label>
+            </div>
+
+            <div class="name">
+
+            <textarea id="how-help"></textarea>
+            </div>
+
+
+            <h4>Your valuable comments are highly appreciated!</h4>
+
+            <button type="button" name="button">Make an appointment</button>
+        </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        <div class="footer-contener">
+            <div class="social footer-box">
+                <img src="images/logo.png">
+                <div class="social-icon">
+                    <ul>
+                        <li><a href="#" class="fa fa-facebook"></a></li>
+                        <li><a href="#" class="fa fa-twitter"></a></li>
+                        <li><a href="#" class="fa fa-youtube"></a></li>
+                        <li><a href="#" class="fa fa-whatsapp"></a></li>
+                    </ul>
+                </div>
+            </div> <!-- .social -->
+            <div class="adress footer-box">
+                <p>Monday - Friday 08:30 till 17:00</p>
+                <p>HüttenStr.100 <br>
+                    40215 Düsseldorf</p>
+                    <p>Tel: 0211-215789 <br>
+                        Mob: 0177-545454 <br>
+                        Email: dr-schmidt@dentist.com</p>
+            </div>
+            <div  class="map footer-box" id="map">
+            </div>
+        </div> <!-- .footer-contener -->
+
+    </footer>
+    <p class="rights-text">2018 © All Rights Reserved • <a href="#">Privacy Policy</a> • Dr. Schmidt Website Design By: DEVUGEES</p>
+
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDImviTsCh_iWhkIRcDewTFqoBav7oUQhA&callback=initMap" async defer></script>
+    <script src="js.js"></script>
+    </body>
+</html>
